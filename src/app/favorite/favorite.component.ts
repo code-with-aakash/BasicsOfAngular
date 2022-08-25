@@ -1,18 +1,11 @@
-import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
+import { Component, OnInit,Input,Output,EventEmitter,ViewEncapsulation } from '@angular/core';
 
 
 @Component({
   selector: 'app-favorite',
   templateUrl: './favorite.component.html',
-  
-  styles:[
-    `
-    .glyphicon{
-      color : green
-    }
-    `
-  ],
-  styleUrls: ['./favorite.component.css']
+  styleUrls: ['./favorite.component.css'],
+  encapsulation: ViewEncapsulation.Emulated 
 })
 export class FavoriteComponent implements OnInit {
 
