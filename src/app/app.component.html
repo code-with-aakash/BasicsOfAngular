@@ -8,6 +8,9 @@
 <!-- <app-books></app-books> -->
 <!-- <courses></courses> -->
 
-<input type="text" [(ngModel)]="title">
+<!-- <input type="text" [(ngModel)]="title">
 <br>
-{{title | titlecase}}
+{{title | titlecase}} -->
+
+
+<app-favorite [isFavorite]="isFavorite"  (change)="onFavoriteChanged()"></app-favorite>
