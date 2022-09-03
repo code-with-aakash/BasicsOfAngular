@@ -4,22 +4,15 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  styles:[
-    `
-    .glyphicon{
-      color : green
-    }
-    `
-  ]
+  
 })
 export class AppComponent {
-  title : string;
-
-  isFavorite : true;
+ tweet = {
+  body:'nothing',
+  isLiked: true,
+  likesCount: 10
   
-  onFavoriteChanged(eventArgs:{ newValue: boolean}){
-    console.log("favorite Changed .." , eventArgs);
-  }
+ }
   
   
 }
